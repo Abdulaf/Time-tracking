@@ -122,7 +122,7 @@ const data = [
 ];
 function renderData(timeframes) {
   let row = "";
-  data.forEach((product) => {
+  data.map((product) => {
     const timeData = product.timeframes[timeframes];
     console.log(timeData);
     row += `
